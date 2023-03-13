@@ -86,7 +86,7 @@ https://medium.com/geekculture/streaming-model-inference-using-flask-and-kafka-3
 https://realpython.com/intro-to-python-threading/
 
 * for setting up flask-redis docker:
-* 
+
 https://collabnix.com/dockerize-an-api-based-flask-app-and-redis-using-docker-desktop/
 
 
