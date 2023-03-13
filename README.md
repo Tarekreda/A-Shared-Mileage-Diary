@@ -66,6 +66,9 @@ once you are done, you can shut down every container using the command
 $ docker compose stop
 ```
 
+
+## References:
+
 The code of the project is the product of our work. However some minor snippets, configurations, and inspiration was drawn from the references linked below:
 
 * for setting up the kafka docker:
