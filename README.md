@@ -4,9 +4,9 @@ A distributed journal where each user can use their node to mark their mileage, 
 ## Seting up the system
 
 
-running this project should be a fairly simple task because all the modules are already encapsulated into their own docker containers.
+Running this project should be a fairly simple task because all the modules are already encapsulated into their own docker containers.
 
-first either clone the repository or download it to your local machine:
+First either clone the repository or download it to your local machine:
 
 ```console
 $ git clone https://github.com/Tarekreda/A-Shared-Mileage-Diary.git
@@ -36,13 +36,20 @@ $ docker compose up
 
 The flask app container should be up and running now, you can check it on : http://127.0.0.1:5000/
 
-for the sake of simplicity and demonstration, we are setting up the app with two user and two cars, choose the user and the car and enter the mileage,you can then move to http://127.0.0.1:5000/getcalculation to check all the diary log, you can also check thebill calculations on http://127.0.0.1:5000/bill
+for the sake of simplicity and demonstration, we are setting up the app with two user and two cars, choose the user and the car and enter the mileage,you can then move to http://127.0.0.1:5000/getcalculation to check all the diary log, you can also check the bill calculations on http://127.0.0.1:5000/bill
+
+
+
+
+
+## Extended functionality and testing the system:
 
 
 to demonstrate the proper functionality of the kafka-docker, you can go to the app node folder and run the command 
 
 
 ```console
+$ cd app-node
 $ pip install -r requirements.txt
 $ flask run -h localhost -p 3000
 ```
@@ -59,4 +66,22 @@ once you are done, you can shut down every container using the command
 $ docker compose stop
 ```
 
+The code of the project is the product of our work. However some minor snippets, configurations, and inspiration was drawn from the references linked below:
 
+* for setting up the kafka docker:
+
+https://towardsdatascience.com/kafka-docker-python-408baf0e1088
+https://www.baeldung.com/kafka-docker-connection
+https://stackoverflow.com/questions/56576014/docker-kafka-connect-two-different-containers
+
+* for setting up the flask app:
+
+https://medium.com/geekculture/streaming-model-inference-using-flask-and-kafka-3476d9ff5ca5
+https://realpython.com/intro-to-python-threading/
+
+* for setting up flask-redis docker:
+https://collabnix.com/dockerize-an-api-based-flask-app-and-redis-using-docker-desktop/
+
+
+
+ 
