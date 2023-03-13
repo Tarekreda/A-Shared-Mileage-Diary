@@ -74,15 +74,19 @@ The code of the project is the product of our work. However some minor snippets,
 * for setting up the kafka docker:
 
 https://towardsdatascience.com/kafka-docker-python-408baf0e1088
+
 https://www.baeldung.com/kafka-docker-connection
+
 https://stackoverflow.com/questions/56576014/docker-kafka-connect-two-different-containers
 
 * for setting up the flask app:
 
 https://medium.com/geekculture/streaming-model-inference-using-flask-and-kafka-3476d9ff5ca5
+
 https://realpython.com/intro-to-python-threading/
 
 * for setting up flask-redis docker:
+* 
 https://collabnix.com/dockerize-an-api-based-flask-app-and-redis-using-docker-desktop/
 
 
