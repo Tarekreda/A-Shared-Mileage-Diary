@@ -1,0 +1,22 @@
+services:
+   redis: 
+     image: redislabs/redismod
+     container_name: redis
+     networks: 
+        - kafka_network
+     ports:
+       - '6379:6379' 
+   flask:
+        build: .
+        container_name: flask
+        networks: 
+            - kafka_network
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/code
+        depends_on:
+            - redis
+networks:
+  kafka_network:
+    name: kafka_docker_example_net

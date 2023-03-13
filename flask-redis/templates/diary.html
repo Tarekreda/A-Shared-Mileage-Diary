@@ -1,0 +1,25 @@
+<!doctype html>
+<title>Mileage Diary</title>
+<style>
+  #data {
+    text-align: center;
+  }
+  table, th, td {
+    border: 1px solid #666666;
+    border-collapse: collapse;
+  }
+  td.header {
+    color: #000000;
+    background-color: #cccccc;
+  }
+</style>
+<h2>Mileage Diary</h2>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<div id="data"><table id="mytable" border="1px"><tr><td>name</td><td>car</td><td>mileage</td></tr></table></div>
+{% for n, c, m in data: %}
+<script>
+    $("#mytable tr:first").after("<tr><td>{{ n }}</td><td>{{ c }}</td><td>{{ m }}</td></tr>")
+    
+</script>
+{% endfor %}
