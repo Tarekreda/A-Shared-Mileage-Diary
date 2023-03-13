@@ -34,9 +34,9 @@ $ cd flask-redis
 $ docker compose up
 ```
 
-The flask app container should be up and running now, you can check it on : http://172.22.0.1:5000/
+The flask app container should be up and running now, you can check it on : http://127.0.0.1:5000/
 
-for the sake of simplicity and demonstration, we are setting up the app with two user and two cars, choose the user and the car and enter the mileage,you can then move to http://172.22.0.1:5000/getcalculation to check all the diary log, you can also check thebill calculations on http://172.22.0.1:5000/bill
+for the sake of simplicity and demonstration, we are setting up the app with two user and two cars, choose the user and the car and enter the mileage,you can then move to http://127.0.0.1:5000/getcalculation to check all the diary log, you can also check thebill calculations on http://127.0.0.1:5000/bill
 
 
 to demonstrate the proper functionality of the kafka-docker, you can go to the app node folder and run the command 
@@ -47,7 +47,7 @@ $ pip install -r requirements.txt
 $ flask run -h localhost -p 3000
 ```
 
-the app should be up and running on : http://172.22.0.1:3000/
+the app should be up and running on : http://127.0.0.1:3000/
 
 you can send other diary entries from this node and check that they are updated at the same time on the other docker node, which was demonstrated in the demo video : https://drive.google.com/file/d/1uSqDDStytTZCF2jOJyDYZclu8qMpFcRA/view?usp=sharing
 
